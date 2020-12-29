@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:include="partials/head :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav th:replace="partials/navbar :: navbar"></nav>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="content">
+                <br>
+                <h1 class="text-center">Facebook Clone</h1>
+                <br>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <br>
+                <br>
+                <h5 class="text-center">Register now or log in.</h5>
+
+                <br>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <!--                <h5 class="text-center">Register now or log in.</h5>-->
+                <br>
+                <div style="padding-left: 60px">
+                    <button class="btn text-center" style="background-color: black">
+                        <a class="nav-link" th:href="@{/login}">Login</a>
+                    </button>
+                    <button class="btn text-center" style="background-color: black">
+                        <a class="nav-link" th:href="@{/register}">Register</a>
+                    </button>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
